@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Formularios</h1>
+    </header>
+    <main>
+        <section>
+            <form>
+                <!-- atributo type -> TIPO DE INFORMACION QUE QUEREMOS INTRODUCIR -->
+                <!-- Placeholder : texto de ayuda para el INPUT -->
+
+                <p>
+                    <label>Nombre:</label>
+                    <input type="text" placeholder="TEXTO DE AYUDA" id="nombre" name="inputnombre" />
+                </p>
+                <p>
+                    <label for=""> Fecha de Nac</label>
+                    <input type="date" id="fechaNac" name="fechaNac" value="DAVID">
+
+                </p>
+                <p>
+                    <label for="sueldo">Sueldo:</label>
+                    <input type="number" id="sueldo" name="sueldo" step="5">
+
+                </p>
+
+                <p>
+                    <label for="pwd">Contraseña</label>
+                    <input type="password" id="pwd" name="pwd">
+                </p>
+
+                <p>
+                    <label for="">Email</label>
+                    <input type="email" id="email" name="email">
+                </p>
+
+                <p> <label for="miColor">Color Favorito</label></p>
+                <input type="color" id="miColor" name="miColor">
+
+                </p>
+                <p>
+
+                    <label for="horaReg">Hora de Registro</label></p>
+                <input type="time" id="horaReg" name="horaReg">
+
+                </p>
+                <p>
+                    <label>Elija Turno</label>
+                </p>
+                <p>
+
+                    <!--el atributo for sirve para que cuando hagas clic en el texto o la bolita igual se marque ( ver en pagina) -->
+                    <!-- atributo checked es para que aparesca marcado por defecto -->
+                    <label for="turnodia">Mañana</label>
+                    <input type="radio" name="turno" id="turnodia" checked>
+                    |
+                    <label for="turnotarde">Tarde</label>
+                    <input type="radio" name="turno" id="turnotarde">
+                    |
+                    <label for="turno snoche">Noche</label>
+                    <input type="radio" name="turno" id="turnonoche">
+                </p>
+
+                <p>
+                    <label>Seleccione Materias</label>
+                    
+                </p>
+
+                <p>
+                    <label for="uxui">UX/UI</label>
+                    <input type="checkbox" id="uxui" name="uxui">
+                    |
+                    <label for="GIT">GIT</label>
+                    <input type="checkbox" id="git" name="git">
+                    |
+                    <label for="devops">DevOps</label>
+                    <input type="checkbox" id="devops" name="devops">
+
+                </p>
+                <button type="submit">Registrarse</button>
+
+                <p>
+
+                </p>
+
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>
