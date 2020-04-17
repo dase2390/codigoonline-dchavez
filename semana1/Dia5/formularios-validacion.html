@@ -17,10 +17,11 @@
             <form>
                 <!-- atributo type -> TIPO DE INFORMACION QUE QUEREMOS INTRODUCIR -->
                 <!-- Placeholder : texto de ayuda para el INPUT -->
+                <!-- REQUIRED es para que un campo sea obligatorio -->
 
                 <p>
                     <label>Nombre:</label>
-                    <input type="text" placeholder="TEXTO DE AYUDA" id="nombre" name="inputnombre" />
+                    <input type="text" placeholder="TEXTO DE AYUDA" id="nombre" name="inputnombre" required autofocus tabindex="1"/>
                 </p>
                 <p>
                     <label for=""> Fecha de Nac</label>
@@ -28,14 +29,17 @@
 
                 </p>
                 <p>
+
+                    <!-- cuando haga tab este sera el segundo debido al tabindex ( probar en navegador haciendo tab ) -->
                     <label for="sueldo">Sueldo:</label>
-                    <input type="number" id="sueldo" name="sueldo" step="5">
+                    <input type="number" id="sueldo" name="sueldo" step="5" min="1000" max="3500" tabindex="2">
 
                 </p>
 
                 <p>
                     <label for="pwd">Contraseña</label>
-                    <input type="password" id="pwd" name="pwd">
+                    <input type="password" id="pwd" name="pwd" required maxlength="10" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="minimo 8 caracteres, 1 mayus 1 minus y 1 numero" >
+                    <small>Minimo 6 y maximo 10 caracteres</small>
                 </p>
 
                 <p>

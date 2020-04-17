@@ -1,0 +1,59 @@
+/* De cada grupo de hermanos al mismo nivel del li's aplicar el color chocolate. o tambien cada tercer elemento de un grupo de hermano van a tener el color chocolate */
+
+li:nth-child(3) {
+    color: chocolate;
+}
+
+/* seleccionando al primer elemento de un grupo de hermanos al mismo nivel */
+p:first-child {
+    color: crimson;
+}
+
+p:last-child {
+    color: blue
+    ;
+}
+
+/* Seleccionar todos los elementos impares de un grupo de hermanos al mismo nivel */
+/* odd = impares  - even= pares */
+/* cualquier tr que sea impar pero sea hijo del tbody 
+tbody tr:nth-child(odd){
+    background-color: tan;
+*/
+
+
+tbody tr:nth-child(odd){
+    background-color: tan;
+}
+
+/*  pares */
+
+tbody tr:nth-child(even){
+    background-color: silver
+}
+
+
+/* este es para q el encabezado sea gris porque sino seria agarra el color tan porque es impar */
+thead>tr{
+    background-color: silver
+
+/* otra opcion es colocar id #tr-encabezado { background-color: silver} */
+
+}
+
+/* selector  : not() interpretado como un "excepto" */
+/* todos los elementos hijos del  ul en cualquier nivel que esten dentro de un section,   excepto los que tengan clase "seleccionado "  */
+
+/*  recordar que ul : es todos los elementos hijos de ul y 
+ul: es todos los elementos ul , la diferencia es el espacio entre ul y :  */
+
+section ul :not(.seleccionado){
+    color: yellowgreen;
+}
+
+/* todos los h4 excepto los que tengan la clase "grande" */
+
+h4:not(.letra-grande) {
+    color: violet;
+}
+

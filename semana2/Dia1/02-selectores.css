@@ -1,0 +1,52 @@
+/* Selector de nombre de etiqueta  */
+
+span {
+    /* Afecta a todos los span */
+    color: teal;
+}
+
+/*  Selector mulitple separado por comas (,) */
+
+li, p {
+/* Se lee, los "li's" y los "parrafos"  */
+    color: rgb(122, 66, 168);
+}
+
+/* Selector de hijos a cualquier nivel */
+aside a {
+    /* Selecciona todos los hijos de "aside" que sean "a" */
+    color: mediumspringgreen;
+}
+
+/* Selector de hijos en primer nivel */
+article >h4{
+    color: navy;
+}
+
+/* Selector de Id, para seleccionar un elemento especifico, dado que es id que es un valor unico, */
+/* para el ID se usa # */
+#titulo-dmovil{
+    color: peru;
+}
+/* Selector de clase */
+/* para la clase se usa .*/
+.lista-semanas{
+    color: tomato;
+}
+
+/* Selector que incluyen los atributos de un elemento */
+/* todos los input de tipo texto */
+input[type="text"] {
+    border: 1px solid chocolate;
+}
+
+input[type="number"] {
+    border:1px solid blue
+}
+
+/* tambien puedes hacer el input de la linea 39 con un selector tipo clase .border-rojo , solo que en html se le debe agregar el class .border-rojo al ese input linea 57 de html  */
+.border-rojo {
+    border:1px solid red
+}
+
+/* comentario  */

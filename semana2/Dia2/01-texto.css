@@ -1,0 +1,27 @@
+/* Familia de fuente */
+h1{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+
+p {
+    /* tamaño de letra */
+    /*  el tamaño por defecto en las paginas es de 16px */
+    font-size: 20px;
+    font-family: Tahoma,sans-serif;
+}
+h4 {
+    /* proporcion de negrita del texto */
+    /* valores de 100 a 900 o (normal, bold , etc) */
+    font-weight: bold;
+}
+small {
+    /* estilo de fuente */
+    /* normal, oblique, italic */
+    font-style: italic;
+}
+
+.texto-footer{
+    /* Propiedad de texto estilo SHORTHAND */
+    /* font-style, font-weight, font-size, font-family  */
+    font: italic 100 10px Arial;
+}
+
+

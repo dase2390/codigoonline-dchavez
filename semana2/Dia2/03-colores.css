@@ -1,0 +1,16 @@
+/* Notacion hexadecimal de colores */
+h1 {
+    text-align: center;
+color: #ff0000;
+}
+main p{
+    color: rgb(100,150,50);
+}
+h3{
+    color: rgb(41,176,249)
+}
+
+/* El alpha es un numero que va entre 0 y 1 y refleja la opacidad*/
+.rojo-transparente{
+    color:rgba(255,42,85,0.5)
+}

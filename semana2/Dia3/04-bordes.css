@@ -1,0 +1,91 @@
+/* funcion de reseteo de margen, para quitarle el margen por defecto de los navegadores */
+
+/* funcion de reseteo box - sizing :border box , lo que hace es conservar la altura y ancho sin considerar el border y el relleno pero si afecta al outline*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 150px;
+    background-color: peachpuff;
+}
+
+main {
+    height: 1000px;
+}
+
+#section-1 {
+    width: 100px;
+    height: 100px;
+    background-color: plum;
+    /* para que un borde exista tiene que tener 3 caracteristicas : Grueso de borde, Estilo del borde y el Color del borde.  */
+    /* Propiedad SHORTHAND : border: 1px solid navy */
+    border-width: 5px;
+    border-style: solid;
+    border-color: rebeccapurple;
+}
+
+#section-2 {
+    width: 100px;
+    height: 100px;
+    background-color: plum;
+    /* para que un borde exista tiene que tener 3 caracteristicas : Grueso de borde, Estilo del borde y el Color del borde.  */
+    /* Propiedad SHORTHAND : border: 1px solid navy */
+    border-bottom: 5px solid red;
+}
+
+#section-3 {
+    width: 100px;
+    height: 100px;
+    border: 5px solid tomato;
+    margin-top: 10px;
+    /* Radio o curvatura de las esquinas del elemento */
+    /* cuando se coloca porcentaje en el border-radius, la referencia es el ancho y alto del mismo elemento.  */
+    border-radius: 15px;
+}
+
+#section-4 {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    border: 5px solid teal;
+    margin-top: 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+#section-5 {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto 0px auto;
+    /* cuando es un elemento tipo block y se coloca auto en  los margin de los costados, el elemento se centra  */
+    border: 15px solid springgreen;
+    outline: 60px solid blue;
+    /* outline offset es un espacio entre el outline y el border */
+    outline-offset: 10px;
+}
+
+#section-6 {
+    margin-top: 100px;
+    font-size: 50px;
+    font-family: 'Trebuchet MS' 
+}
+
+#section-6 input {
+    /* como eliminar un border que no viene por defecto? */
+    border: 0;
+    outline: 0;
+    border-bottom: 3px solid aqua;
+    color: rgb(255, 0, 242);
+    font-size: 25px;
+    background-color: lightgreen;
+    /* padding: si pongo un valor le da espacio para arriba,abajo,izquierda y derecha. Si pongo 2 valores es 1 valor para izquierda derecha y otro valor para arriba y abajo */
+    padding: 12px;
+    border-radius: 30px;
+}
+    #section-6 input::placeholder {
+       color: blue;
+    }
+

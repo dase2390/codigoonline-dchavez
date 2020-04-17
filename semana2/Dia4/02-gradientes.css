@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+/* recordar: div es elemento block */
+#div-1 {
+width: 150px;
+height: 150px;
+margin: 50px auto 0px auto;
+border: 1px solid #aaaaaa;
+/* linear-gradiente( posicion angulo colores) */
+/* background: -webkit-linear-gradient(top right,#fff,#000); */
+/* se puede usar las paginas uigradients.com y cssgradient.io para obtener codigo de gradientes */
+background: radial-gradient(#141e30, #587494)
+
+}
+body {
+    height: 800px;
+    background: linear-gradient(to bottom, #ee8899,#ffffff);
+}
+
+

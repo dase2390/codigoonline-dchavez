@@ -1,0 +1,47 @@
+/* inline: solo ocua el tamaño de su contenido
+block : tengan o no contenido ocupan todo el ancho disponible */
+/* el asterisco * selecciona todos los elementos */
+* {
+    margin: 0;
+}
+header{
+    background-color: coral;
+}
+h1{
+    background-color: crimson;
+}
+
+body{
+    background-color: thistle;
+}
+
+main{
+    width: 50%;
+    background-color: turquoise;
+    height: 600px;
+    overflow-y: auto;
+}
+.section-1{
+    background-color: darkgreen;
+    color: yellow;
+    width: 50%;
+    /* como no tiene una altura definida la altura depende de su texto o de lo que le coloque, se adapta a su contenido */
+}
+.section-2{
+    background-color: darkred;
+    color: rgb(187, 162, 162);
+    width: 50%;
+    height: 100px;
+    /* el overflow determina que se hara con el contenido extra al tamaño del contendor */
+    overflow-y: scroll;
+    
+}
+footer{
+    background-color:rgb(50, 55, 205);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+footer>p {
+    text-align: center;
+    color: thistle;
+}

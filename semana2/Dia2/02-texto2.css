@@ -1,0 +1,41 @@
+/* importando y declarando una fuente */
+@font-face{
+    font-family: 'Roboto-Mono';
+    src: url('./RobotoMono-Regular.ttf');
+}
+
+
+h1{
+    /* OJO, alineamiento de texto y no de ELEMENTOS */
+    /*  */
+    text-align: center;
+}
+
+/* toda las class que tenga letra-roboto tendran la fuente roboto-mono */
+
+.letra-roboto{
+    font-family: 'Roboto-Mono';
+
+}
+
+/* todos los parrafos excepto los que tienen class texto-footer */
+p:not(.texto-footer):not(.letra-roboto){
+    /* indenta o agrega sangria a la primera linea de un texto */
+    text-indent: 40px;
+    /* espacio entre letra y letra en un texto */
+    letter-spacing: 5px;
+    /* espacio entre palabra y palabra */
+    word-spacing: 15px;
+    /* interlineado */
+    line-height: 15px;
+}
+small{
+    /* underline | overline | none | line-through */
+    text-decoration: line-through;
+}
+
+/* resetear los estilos de los enlaces */
+a { 
+    text-decoration: none;
+    color: black;
+}

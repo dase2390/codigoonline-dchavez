@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 150px;
+    background-color: rgb(152, 251, 233);
+}
+
+main {
+    height: 3000px;
+}
+
+#section-1 {
+    height: 300px;
+    background-color: paleturquoise;
+    background-image: url(./dog.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#section-2 {
+    height: 700px;
+    background-image: url(./textura.png);
+}
+
+#section-3 {
+    height: 500px;
+    background-image: url(./frutas.jpg);
+    background-attachment: fixed;
+}
+
+#section-3 h2 {
+    padding-top: 210px;
+    text-align: center;
+    font-family: cursive;
+    color: rgb(183, 196, 198);
+    font-size: 80px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* aqui hemos aplicado el rgba 0.7 que da un tono de opacidad al fondo */
+}
+
+#section-4 {
+    
+}
