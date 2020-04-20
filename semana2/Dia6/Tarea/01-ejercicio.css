@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+height: 100vh;
+
+}
+
+nav {
+    height: 5%;
+    background-color:rgb(254, 254, 220);
+}
+header {
+    height: 20%;
+    background-color: rgb(254, 220, 254);
+}
+
+main {
+    height: 70%;
+   ;
+}
+
+section {
+    height: 70%;
+    background-color: rgb(220, 254, 254);
+    float: none;
+}
+
+
+#sidebar-1 {
+    height: 70%;
+    width: calc(100%/3);
+    background-color: rgb(220, 220, 254);
+    float: left;
+
+    
+}
+
+#aside-3 {
+    background-color: rgb(220, 220, 254);
+    width: calc(100%/3);
+    float: left;
+height: 30%;
+}
+
+#aside-2 {
+    background-color: rgb(220, 254, 220);
+    width: calc(100%/3);
+    float: left;
+height: 30%;
+}
+
+#aside-1 {
+    background-color:rgb(254, 220, 220);
+    width: calc(100%/3);
+float: left;
+height: 30%;
+
+}
+
+footer {
+
+    height: 5%;
+    background-color: rgb(220, 220, 220);
+}
+
+
+.fix {
+    clear: both;
+}

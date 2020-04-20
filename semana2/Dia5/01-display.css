@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: tomato;
+}
+
+
+/* block: si se le puede colocar widht y height */
+/* inline se ubican en la misma linea horizontal hasta llenar el ancho de la pantalla, luego reabalsan para abajo */
+/* block inline -> hibrido entre block y inline */
+/* la coma es para decir que son aside y section, si se le pone espacio seria los hijos del aside  */
+aside,section {
+    /* 3 formas en las que podemos trabajar para posicionar elementos */
+    display: inline-block;
+
+}
+
+aside {
+    height: 500px;
+    width: 30%;
+    background-color: teal;
+}
+
+section {
+    height: 500px;
+    width: 30%;
+    background-color: turquoise;
+}

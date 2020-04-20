@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+header {
+    background-color: thistle;
+    height: 70px;
+
+}
+
+main {
+    height: 830px;
+}
+
+aside {
+    height: 830px;
+    width: 20%;
+}
+
+#aside-1 {
+    background-color: turquoise;
+  
+  
+}
+#aside-2 {
+    background-color: teal;
+    
+}
+
+section {
+
+    width: 60%;
+    height: 830px;
+    background-color: yellow;
+}
+
+aside,section {
+
+    float: left;
+}
+
+.fix {
+    clear: both;
+}

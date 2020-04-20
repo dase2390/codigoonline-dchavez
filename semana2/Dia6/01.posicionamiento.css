@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 2000px;
+    border: 5px solid  plum;
+
+}
+
+/* este borde del main es para ayudarnos a ver donde esta el main, al terminar el diseño, esto se borra para que no quede feo */
+#section-1 {
+    border: 1px solid red;
+    height: 500px;
+    margin: 40px;
+}
+
+
+.div-2 {
+    background-color: red ;
+    width: 150px;
+    height: 150px;
+}
+
+/* atributo position
+relative, absolute,  */
+/* position relative : cuando yo uso este valor, el elemento conserva su posicion original, sin embargo ya esta habilitado para moverse respecto de su padre( en este caso respecto del main, ya puedo empezar a manipular el elemento */
+/* se pueden usar las referencias top y left */
+/* los hermanos del elemento relative respetan su posicion */
+
+.div-1 {
+    background-color: indigo;
+    width: 150px;
+    height: 150px;
+    opacity: 0.6;
+    position: relative;
+    /* top: del techo se est moviendo 20px */
+    top: 0px;
+    /* left: de la izquierda avanza 20px */
+    left: 100%;
+    transform: translate(-150px);
+    /* El objetivo es colocar este elemento a la esquina superior derecha del div : 
+    hay que teneer en cuenta que el relative solo se mueve en top y left por lo que: 
+    se ha usado este transform: translate para colocar el elemento donde se quiere, tiene que ser -150px porque el translate es x,y asi que seria -150px = - x , y 150px es el tamaño de ese elemento que es lo que sobra ya que lo hemos movido 100% a la izquierda. Con eso ya quedaria en la posicion deseada   */
+
+    /* si el elemento quisiera ponerlo en el centro seria: left:50% y transform: translate(-50%,0);  */
+    /* eN Translate cuando toma un porcentaje lo hace respecto del ancho del mismo elemento, NO DEL PADRE */
+
+    /* El left o top, cuando toma un porcentaje, lo hace respecto del tamalo DE SU PADRE  */
+
+}
+
+#section-2 {
+    border: 1px solid red;
+    margin: 40px;
+    height: 300px;
+    position: relative;
+    /* si un elemento tiene posicion relativa es por 2 cosas, o es padre de un absolute o lo estan reposicionando a ese elemento */
+    
+}
+
+/* position absolute: cuando es absoluta un elemento no respeta a su padre sino al siguiente elemento padre que tuviera una posicion relativa. Es decir el elemento se posiciona respeto del padre mas cercano que tenga relacion relativa  */
+/* se pueden usar bottom, top, left y right */
+/* los hermanos del elemento absoulte ya no consideran su posicion, como en el caso del posicionamiento relativo */
+
+.div-3 {
+width: 100px;
+height: 100px;
+background-color: seagreen;
+/* opacity: 0.6; */
+position: absolute;
+bottom: 0px;
+right: 0px;
+
+/* en este caso el section no tiene position relativa por eso no  respeta al section-2 , cuando le ponemos al section position relativa ya lo respeta , por eso es recomendable ponerle el position relative al padre que quiere que respete*/
+/* si el padre no tiene posicion relativa, el elemento tomara como referencia el proximo padre, abuelo, bisabuelo, etc  que tenga posicion relativo */
+}
+
+.div-4 {
+    width: 100px;
+    height: 100px;
+    background-color: slateblue;
+}
+
+.div-fixed {
+
+    width: 150px;
+    height: 150px;
+    background-color: yellowgreen;
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Fixed: su unica referencia es la ventana del navegador.Para ello el elemento debe tener asignado 2 valores de referencia. Ejm: Top y left, ejm: bottom y left, ejm: right y bottom */
+    /* con los valores bottom y left 0 se colocar a la esquina inferior izquierda del navegador */
+    /* con los valores bottom y left 50% queda casi en el centro para colocarlo en el centro tendria que restarle el 50% de su tamaño y eso se hace con Transform translate (-50% , 50%); */
+    
+
+}

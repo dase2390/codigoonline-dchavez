@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 100vh;
+    /* vh => viewport: altura de la resolucion del pantalla del dispositvo */
+    background-color: #eeeeee;
+}
+
+.contenedor {
+width: 900px;
+height: 500px;
+background-color: white;
+/* para centrar uso margin: 0 auto o tambien con posicion relative */
+
+position: relative;
+left: 50%;
+top: 50%;
+transform: translate(-50%,-50%);
+
+}
+
+.imagen-wrapper {
+   height: 250px;
+   border: 3px solid red;
+   position: relative;
+}
+
+/* para colocar el circulo en el centro */
+
+.circulo {
+position: absolute;
+bottom: 0px;
+left: 50%;
+transform: translate(-50%,50%);
+border-radius: 50%;
+/* como es un cuadrado y quiero un circulo se pone border - radius 50% */
+border: 1px solid white;
+
+}
+
+/* cuando tienes un elemento block y le pones el text- align: center. El block no se centra pero los elementos inline si se centran */
+
+.texto-wrapper {
+    text-align: center;
+}
+
+.texto-wrapper>p {
+    margin-top: 60px;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: #444444;
+
+}
+
+.texto-wrapper>button {
+    margin-top: 50px;
+    border: none;
+    background-color: #679f16;
+    color: white;
+    padding: 15px;
+    border-radius: 3px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    
+    
+}
+
+

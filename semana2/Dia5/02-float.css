@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: teal;
+    color: whitesmoke;
+}
+#caja-1 {
+    width: 140px;
+    height: 50px;
+    float: left;
+    background-color: tomato;
+    
+}
+#caja-2 {
+    width: 140px;
+    height: 50px;
+    background-color: tomato;
+    float: left;
+
+}
+
+#caja-3 {
+    width: 140px;
+    height: 50px;
+    background-color: tomato;
+    float: left;
+;
+}
+#caja-4 {
+    width: 140px;
+    height: 50px;
+    background-color: tomato;
+  float: left;
+}
+
+
+#contenedor {
+    background-color: turquoise;
+    width: 600px;
+}
+
+.fix {
+    clear: both;
+}
+
+
+
+#navegacion {
+    background-color: crimson;
+    color: whitesmoke;
+    /* text-align: center; */
+}
+    /* cuando se quiere centrar un elemento bloqueante se debe colocar 
+
+    .navegacion-wraper {
+        margin: 0 auto;
+    } */
+.navegacion-wraper {
+    background-color: green;
+    width: 600px;
+    margin: 0 auto;
+}
+
+/* .navegacion-wraper>div:not(.fix) esta es otra manera de hacer lo de abajo, porque quieres dar a entender que quieres excluir el div fix */
+
+
+
+/* se hizo esto para excluir el div fix */
+.opcion-1, .opcion-2, .opcion-3 {
+    background-color: indigo;
+    width: 200px;
+    float: left;
+    text-align: center;
+    border: 1px solid yellow;
+    /* para darle mayor espacio a las opcones */
+    padding: 15px;
+}
+
+/* se usa float cuando se quiere arrewglar el problema del inline block , el problema de los inline-block es que se genera un espacio entre los elementos */

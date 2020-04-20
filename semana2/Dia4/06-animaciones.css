@@ -1,0 +1,61 @@
+* {
+    margin:0;
+    box-sizing: border-box;
+}
+#div-1 {
+    width: 150px;
+    height: 150px;
+    background-color: tomato;
+    /* animation: nombre duracion funcion_de_tiempo delay nro_de_veces_a_repetir(0 1s o tambien puede ser infinite) direction(normal) fill-mode(none) */
+    animation: cambiardecolores 2s ease infinite normal none;
+}
+
+/* div creado para hacer un spin de carga  */
+#div-2 {
+    margin: 100px auto 0px auto;
+    width: 64px;
+    height: 64px;
+    background-image: url(./loader.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: girar 2s linear infinite normal none ;
+    
+}
+
+@keyframes girar {
+
+    0%{
+        transform: rotate(0deg);
+
+    }
+    50%{
+        transform: rotate(180deg)
+        scale(1.5);
+    }
+
+   
+    100%{
+        transform: rotate(360deg);
+
+    }
+
+    /* div creado para hacer un spin de carga  */
+}
+
+/* CREANDO UNA ANIMACION */
+@keyframes cambiardecolores { 
+    /* se coloca todas las animaciones que un frame va a tener */
+    
+    0%{
+        background-color: green; 
+    }
+
+    50%{
+        background-color: red;
+        transform: scale(1.5);
+    }
+
+    100%{
+        background-color: indigo;
+    }
+}
