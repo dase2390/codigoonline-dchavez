@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+
+}
+:root {
+    --color-primario: #4b007d;
+    --color-secundario: #8200d9;
+    --color-light: #c875ff;
+    --roboto-font: 
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.header {
+    display: flex;
+    height: 106px;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, var(--color-primario), var(--color-secundario));
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.16);
+}
+
+.header_logo {
+    width: 20%;
+    display: flex;
+   border: 1px solid red; 
+    justify-content: center;
+    align-items: center;
+    /* var(nombre_de_variable) = var(--color-primario), en caso la variable no exista = */
+    color: var(--color-primario, #445566);
+
+}
+
+.header_navegacion {
+    /* border: 1px solid blue; */
+    width: 50%;
+    display: flex;
+}
+
+
+/* SE PONE ESTE FLEX PARA QUE LOS ENLACES SE ALINEEN EN FILA */
+/* Ul */
+.header_navegacion-lista {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center; 
+    /* border:1px solid red; */
+}
+
+/* Li */
+.header_navegacion-item {
+    flex: 1;
+    /* border: 3px solid yellow; */
+    text-align: center;
+    font-size: 28px;
+    transition: all 0.5s ease;
+}
+
+.header_navegacion-item:hover{
+
+    flex: 1.5;
+}
+
+.header_navegacion-item a {
+    /* para quitarle el subrayado del enlace */
+text-decoration: none;
+color: white;
+font-weight: 100;
+
+
+}
+
+.header_logo-texto {
+    font-size: 48px;
+    color: white;
+    font-weight: 300;
+    margin-left: 20px;
+
+}
+.header_logo-texto span {
+    font-size: 48px;
+    color: white;
+    font-weight: 800;
+
+}
+
+.iconos-nav {
+ width: 30%;
+ border: 1px solid yellow;
+}
+.img-icon {
+    width: 20%;
+}

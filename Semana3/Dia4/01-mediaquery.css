@@ -1,0 +1,58 @@
+ * {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+
+    background-color :thistle;
+}
+/* @media ([condicion]) */
+/* si como maximo la pantalla mide 480px de ancho, se aplicara todas las reglas del mediaquerie establecidas */
+/* all : para todos los casos de pantalla(para imprimir(priint) y para visualizar(screen) */
+/* screen : para todas las pantallas a color */
+/* print: para la misma pantalla pero cuando se envia a una impresora( cuando se va a imprimir) */
+/* speech: para cuando la pantalla sea leida por un lector de pantalla  */
+
+@media screen and (max-width:1024px) {
+    body {
+        background-color: goldenrod;
+    }
+
+     .parrafo {
+         display: none;
+     }
+}
+
+@media screen and (max-width:768px) {
+    body {
+        background-color: teal;
+    }
+
+     .parrafo {
+         display: none;
+     }
+}
+
+
+@media screen and (max-width:480px) {
+    body {
+        background-color: white;
+    }
+
+     .parrafo {
+         display: none;
+     }
+}
+
+
+@media screen and (max-width:320px) {
+    body {
+        background-color: hotpink;
+    }
+
+     .parrafo {
+         display: none;
+     }
+}

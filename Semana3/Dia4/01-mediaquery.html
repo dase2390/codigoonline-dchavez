@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./01-mediaquery.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <picture>
+        <!-- en source puedo colocar una regla(media query) para cambiar la imagen respecto del tamaño de la pantalla  -->
+        <source media="(max-width:488px)" srcset="http://placehold.it/100x100?text=M" />
+
+        <!-- en img por defecto eligire una imagen grande  -->
+        <img src="http://placehold.it/500x500?text=Mi aplicacion" alt="">
+    </picture>
+
+</body>
+
+</html>

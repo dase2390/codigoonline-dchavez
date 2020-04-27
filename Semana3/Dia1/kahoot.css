@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+hr{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #aaa;
+}
+
+.menu, .resultados {
+    height: 100vh;
+    float: left;
+}
+
+.fix {
+    clear: both;
+}
+
+/* RESULTADOS */
+.resultados {
+width: calc(100% - 328px);
+background-color: #46178F ;
+
+
+}
+
+.resultados-header {
+ position: relative;
+}
+
+.header-titulo {
+    text-align: center;
+    color: #ffffff;
+padding: 20px 0;
+font-size: 25px;
+
+}
+
+/* este elemento es SPAN que es un elemento inline y no se puede especificar width y height y necesito eso para hacer circulo, entocnes se debe convertir en block con display:block */
+.header-icono{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    display:block;
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    color: white;
+    border-radius: 50%; 
+    text-align: center;
+    padding: 10px;
+    /* border raidus 50% convierte en circulo a los elementos cuadrados */
+}
+
+.feedback-boton {
+    float: right;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    margin-right: 25px;
+    color: #333 ;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: bold;
+    background-color: white;
+    border-bottom: 4px solid #aaa;
+}
+
+.lista-contenedor {
+    list-style: none;
+  
+    padding: 0px 15%;
+    
+}
+
+.lista-item {
+    
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px 15px 10px 15px;
+    
+    
+}
+
+.item-puntaje {
+    float: right;
+}
+
+.item-nombre {
+    float: left;
+}
+
+.resultados-lista {
+    margin-top: 200px;
+}
+
+/* este gnanador va a abajo por que EL CSS trabaja en cascada, entonces necesitamos que este fondo superpona a los otros */
+
+.ganador {
+    background-color: white;
+    color: #333333;
+    border-radius: 6px;
+}
+
+
+/* MENU */
+
+.menu-botones {
+
+    margin-top: 80px;
+}
+
+.menu {
+    width: 328px;
+    background-color: white;
+    padding: 60px 40px 30px 40px;
+    position: relative;
+}
+
+.menu-titulo {
+    text-align: center;
+    color: #333333;
+    font-size: 20px;
+    line-height: 25px;
+    
+}
+
+/* para hacerlo block se hace display:block ya que los botones son elementos inline */
+.boton {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 8px 0;
+    border-radius: 5px;
+    margin: 20px 0 20px 0;
+    color: #FAFEFE ;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+
+}
+
+.exitoso {
+    background-color: #26890c ;
+    border-bottom: 4px solid #1c6709;
+}
+
+.exitoso:hover {
+    background-color: #1c6709;
+    border-bottom: 3px solid rgb(18, 73, 5);
+}
+
+.primario {
+    background-color: #1468ce ;
+    /* este border bottom es para dar sombra */
+    border-bottom: 4px solid #0e4e9a;
+}
+
+.parrafo-footer {
+
+    text-align: center;
+    color: #6e6e6e;
+}
+
+.span-footer {
+
+    color: #46178F;
+    font-weight: 900 ;
+}
+
+
+/* si el menu-footer es absolute el aside(class " menu")debe ser relativo para este lo respete */
+.menu-footer {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 0px 40px 30px 40px;
+}
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./kahoot.css">
+    <!-- FONT MONTSERRAT -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <!-- LIBRERIA ANIMATED.CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+        integrity="sha256-PHcOkPmOshsMBC+vtJdVr5Mwb7r0LkSVJPlPrp/IMpU=" crossorigin="anonymous" />
+        <!-- LIBRERIA FONT -AWESOME V5.13.0 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <!-- agregando animated fadeinleft y slow (sacado de la libreria animated css que esta en github ver documentacion) -->
+        <section class="resultados animated fadeInLeft slow"  >
+            <div class="resultados-header">
+                <h1 class="header-titulo">Game Over</h1>
+
+                <!-- SE COPIO EL ICONO DESDE FONT AWESOME , SOLO SE PEGA EL CODIGO <i class="fas fa-home"></i> -->
+                <span class="header-icono"><i class="fas fa-home fa-2x"></i></span>
+            </div>
+            <div class="resultados-feedback"><button class="feedback-boton">Show feedback</button>
+                <!-- este fix se pone para  que la lista no choeque con el boton show feedback (revisar con bordes de colores para entender)  -->
+                <div class="fix"></div>
+            </div>
+            <div class="resultados-lista">
+                <ul class="lista-contenedor">
+                    <li class="lista-item ganador">
+
+                        <span class="item-nombre">Popi</span>
+                        <span class="item-puntaje">2000</span>
+                        <div class="fix"></div>
+                    </li>
+                    <li class="lista-item">
+
+                        <span class="item-nombre">Pepe</span>
+                        <span class="item-puntaje">2000</span>
+                        <div class="fix"></div>
+                    </li>
+                    <li class="lista-item">
+
+                        <span class="item-nombre">Pipo</span>
+                        <span class="item-puntaje">2000</span>
+                        <div class="fix"></div>
+                    </li>
+                    <li class="lista-item">
+
+                        <span class="item-nombre">Pepa</span>
+                        <span class="item-puntaje">2000</span>
+                        <div class="fix"></div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <aside class="menu animated fadeInLeft slow" >
+            <h3 class="menu-titulo">What would you like to do next?</h3>
+            <div class="menu-botones">
+
+                <!-- las clases se colocan para compartir propiedades, ambos botones tienen la clase boton, pero tambien le hemos colocado a uno exitoso y al otro primaro, esto porque quiero diferenciar los colores. Ambos botones van a tener las caracteristicas de la clase boton pero se van a diferenciar por la clase exitoso y primario( esto porque quiero diferenciar el color, las otras caracteristicas son compartidas). Al colocar la clase boton exitoso este boton va a tener las caracteristicas de la clase boton y tambien las de exitoso : se suman -->
+                <button class="boton exitoso">
+                    View report
+                </button>
+                <button class="boton primario">
+                    Save results
+                </button>
+                <hr />
+                <button class="boton primario">
+                    Play game
+                </button>
+                <button class="boton primario">
+                    New game
+                </button>
+            </div>
+            <div class="menu-footer">
+                <p class="parrafo-footer">
+                    <span class="span-footer"> Kahoot! tip:</span>
+                    Challenge your students to beat their old scores in Ghost Mode. </p>
+            </div>
+
+        </aside>
+        <div class="fix"></div>
+    </main>
+
+</body>
+
+</html>

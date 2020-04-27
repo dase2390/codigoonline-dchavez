@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content: center;
+    border: 10px solid darkmagenta;
+    height: 100vh;
+}
+
+main {
+    
+    width: 1920px;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    border: 1px solid red;
+    background-color: white;
+}
+
+/* DIV - LOGO */
+
+.logo-pride {
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid teal;
+}
+
+/* LOGO */
+
+.img-logo {
+    width: 50%;
+}
+
+/* NAV */
+
+.navegacion-pride {
+    display: flex;
+    border: 1px solid violet;
+    width: 50%;
+}
+
+/* UL  */
+
+.navegacion-lista-pride {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.iconos-nav {
+    width: 30%;
+    border: 1px solid yellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.img-icon {
+    width: 26px;
+    height: 30px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+section {
+    height: 1000px;
+    border
+}
+
+.section1 {
+    border: 5px solid salmon;
+    
+}
+
+.banner-1 {
+    position: relative;
+    border: 5px solid seagreen;
+   height: 100%;
+}
+
+.banner-1-text {
+    position: absolute;
+border: 10px solid yellowgreen;
+
+bottom: 50%;
+left: 10%;
+
+}
+
+.text-banner { 
+
+    font-size: 50px;
+    color: white;
+    
+}
+
+
+.banner-2 {
+    position: relative;
+    height: 100%;
+    border: 5px solid sandybrown;
+    
+}
+
+.banner-2-text {
+    position: absolute;
+    border: 5px solid turquoise;
+    bottom: 50%;
+    right: 10%;
+    
+}
+
+
+
+ 
+.banner-img-2 {
+    width: 100%;
+    
+}
+
+.banner-img-1 {
+    width: 100%;
+    
+}
+
+footer {
+    height: 30%;
+}
+
+ @media screen and (max-width:800px) {
+
+
+ }
+    
+   
+
+
